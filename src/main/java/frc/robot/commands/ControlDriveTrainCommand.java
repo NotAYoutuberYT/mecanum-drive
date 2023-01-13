@@ -41,7 +41,7 @@ public class ControlDriveTrainCommand extends CommandBase {
   // Called every time the scheduler runs while the command is scheduled.
   @Override
   public void execute() {
-    m_subsystem.drive(m_controller.getLeftY() * constants.speed, m_controller.getLeftX() * constants.speed, m_controller.getRightX() * constants.speed);
+    m_subsystem.drive(m_controller.getLeftY() * constants.driveSpeed, -m_controller.getLeftX() * constants.driveSpeed, -m_controller.getRightX() * constants.turnSpeed);
   }
 
   // Called once the command ends or is interrupted.

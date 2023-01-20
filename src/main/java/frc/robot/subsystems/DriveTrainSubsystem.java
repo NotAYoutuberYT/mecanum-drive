@@ -26,6 +26,9 @@ public class DriveTrainSubsystem extends SubsystemBase {
     CANSparkMax backLeftNeo = new CANSparkMax(constants.driveTrainBackLeftPort, MotorType.kBrushless);
     CANSparkMax backRightNeo = new CANSparkMax(constants.driveTrainBackRightPort, MotorType.kBrushless);
 
+    frontLeftNEO.setInverted(true);
+    backLeftNeo.setInverted(true);
+
     m_MecanumDrive = new MecanumDrive(frontLeftNEO, backLeftNeo, frontRightNEO, backRightNeo);
   }
 

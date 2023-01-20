@@ -21,7 +21,7 @@ public final class Constants {
   }
 
   public static class DriveTrainConstants {
-    public final double driveSpeed = 0.25;
-    public final double turnSpeed = 0.3;
+    public final double driveSpeed = 1.0;
+    public final double turnSpeed = 0.7;
   }
 }
